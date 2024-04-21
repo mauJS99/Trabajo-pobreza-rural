@@ -1,0 +1,26 @@
+---
+title: "Evolución de pobreza en el Chile rural"
+author: "Mauricio Jara Saavedra"
+format: html
+editor: visual
+bibliography: Trabajo1R-Evolucion-Pobreza-sectores-rurales.bib
+link-citations: true
+---
+
+# Análisis de la pobreza multidimensional en los sectores rurales de Chile: estudio local en la región del Bío-Bio.
+
+#### Posible título enfocad en la región del Bio-bio.
+
+La pobreza en Chile ha sido un fenómeno que ha acompañado al desarrollo del país constantemente y la medición de esta se ha realizado de manera más formal y sistemática a partir de la aplicación de la Encuesta de Caracterización Socioeconómica Nacional (CASEN), la cual ha implementado la medición de la pobreza multidimensional a partir del año 2013 [@herreraPobrezaMultidimensionalChile], con el fin de aportar a una comprensión más amplia y detallada de las condiciones de vida de la población, implementando dimensiones como educación, salud, trabajo, vivienda y redes sociales.
+
+Ahora bien, si llevamos esta medición de la pobreza multidimensional a los sectores rurales, podremos ver como los indicadores multidimensionales nos permiten agudizar el análisis, permitiendo así obtener una información mas detallada de las condiciones de vida de las personas en los sectores rurales del país.
+
+Según un análisis comparativo de las carencias y brechas en los hogares rurales de Chile, se plantea que, a nivel general, las carencias se encuentran mas acentuadas en las zonas rurales y que estas se agudizan al utilizar indicadores multidimensionales para su medición. [@rodriguez-garcesReconfiguracionMapaPobreza2018] Por lo que llevar a cabo un análisis de la evolución de estos indicadores en comparación a sectores urbanos, nos proporcionará una información más detallada de las condiciones de vida de estos sectores.
+
+Por otro lado, cabe señalar que la relación entre educación, ruralidad y pobreza no es algo sencillo, y si consideramos el rol de la educación a la hora de reducir la brecha de desigualdades en las oportunidades, podremos observar que la educación para la población rural ha sido escasamente atendida. [@vera-bachmannResilienciaPobrezaRuralidad2015] Esto ha llevado a que la brecha de desigualdad social se mantenga en el país.
+
+Para los efectos de este trabajo consideraremos las definiciones manifestadas por el Ministerio de Vivienda y Urbanismo en el decreto N° 47, [@decreto1992] en el cual se refiere a un Área urbana como la superficie del territorio ubicado al interior del límite urbano; un Área rural como territorio ubicado fuera del límite urbano; y Límite Urbano como la línea imaginaria que delimita las áreas urbanas.
+
+Con lo anterior, nos referiremos al fenómeno de pobreza multidimensional según la medida oficial de Chile, la cual incluye 5 dimensiones que son reconocidas como socialmente necesarias. Estas dimensiones son: Educación; Salud; Trabajo y seguridad social; Vivienda y Entorno; Redes y Cohesión social. [@PNUD]
+
+Ahora bien, por efectos de lo que se pretende llevar a cabo en este estudio, se acotará el estudio a la 8va región de Chile, la "Región del Biobío", ya que esta región presenta un alto porcentaje de su población viviendo en áreas rurales.
