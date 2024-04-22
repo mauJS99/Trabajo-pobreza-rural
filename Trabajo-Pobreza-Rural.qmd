@@ -1,6 +1,6 @@
 ---
-title: "Análisis de pobreza en el Chile rural"
-author: "Mauricio Jara Saavedra"
+title: "Analisis de Pobreza en el Chile Rural"
+author: "Mauricio Jara"
 format: html
 editor: visual
 bibliography: Trabajo1R-Evolucion-Pobreza-sectores-rurales.bib
@@ -8,8 +8,6 @@ link-citations: true
 ---
 
 # Análisis de la pobreza multidimensional en los sectores rurales de Chile: estudio local en la región del Bío-Bio.
-
-#### Posible título enfocad en la región del Bio-bio.
 
 La pobreza en Chile ha sido un fenómeno que ha acompañado al desarrollo del país constantemente y la medición de esta se ha realizado de manera más formal y sistemática a partir de la aplicación de la Encuesta de Caracterización Socioeconómica Nacional (CASEN), la cual ha implementado la medición de la pobreza multidimensional a partir del año 2013 [@herreraPobrezaMultidimensionalChile], con el fin de aportar a una comprensión más amplia y detallada de las condiciones de vida de la población, implementando dimensiones como educación, salud, trabajo, vivienda y redes sociales.
 
@@ -30,8 +28,8 @@ Con lo anterior, llevaremos un análisis en base a los resultados obtenidos por 
 ### Trabajo en R: Ajustes iniciales y carga de datos:
 
 ```{r}
-#Ajustes iniciales:
-options(scipen=999)
+#Ajustes iniciales: 
+options(scipen=999) 
 #Paquetes:
 library(pacman)
 pacman::p_load(haven,
@@ -53,7 +51,7 @@ load(file = "Input/DATA.RData")
 ### Tratamos los casos perdidos:
 
 ```{r}
-sum(is.na(datos_proc))
+sum(is.na(datos_proc)) 
 datos_proc <-na.omit(datos_proc)
 ```
 
@@ -80,23 +78,6 @@ A esto, podemos agregar información respecto a los ingresos promedio, los cuale
 # 3.1 Gráficos univariados.
 
 #| label: fig-gdp
-#| fig-cap: “Educacion”
-#  Educación
-frq(datos_proc$Educacion)
-
-ggplot(datos_proc, aes(x = Educacion)) +
-  geom_bar() +
-  labs(x = "Nivel educativo", y = "Frecuencia") +
-  theme_minimal()+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-```
-
-En el gráfico correspondiente a la educación podemos evidenciar como la mayor frecuencia se encuentra en el 9, lo cual corresponde a una educación media completa en un establecimiento científico Humanista.
-
-```{r}
-# 3.1 Gráficos univariados.
-
-#| label: fig-gdp
 #| fig-cap: “Vivienda”
 #Vivienda
 frq(datos_proc$Vivienda)
@@ -106,6 +87,16 @@ ggplot(datos_proc, aes(x = Vivienda)) +
   labs(x = "Calidad Vivienda", y = "Frecuencia") +
   theme_minimal()+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+En el gráfico correspondiente a la educación podemos evidenciar como la mayor frecuencia se encuentra en el 9, lo cual corresponde a una educación media completa en un establecimiento científico Humanista.
+
+```{r} # 3.1 Gráficos univariados.}
+#| label: fig-gdp 
+#| #| fig-cap: “Vivienda” 
+#| #Vivienda 
+frq(datos_proc$Vivienda)  
+ggplot(datos_proc, aes(x = Vivienda)) +   geom_bar() +   labs(x = "Calidad Vivienda", y = "Frecuencia") +   theme_minimal()+   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 Por otro lugar, si nos enfocamos en observar la información acorde a la vivienda, podemos observar que en su mayoría encontramos viviendas correspondientes a la clase media, es decir viviendas de clase media, incluso viviendas sociales.
