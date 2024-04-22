@@ -78,24 +78,26 @@ A esto, podemos agregar información respecto a los ingresos promedio, los cuale
 # 3.1 Gráficos univariados.
 
 #| label: fig-gdp
-#| fig-cap: “Vivienda”
+#| fig-cap: “Educacion”
 #Vivienda
-frq(datos_proc$Vivienda)
+frq(datos_proc$Educacion)
 
-ggplot(datos_proc, aes(x = Vivienda)) +
+ggplot(datos_proc, aes(x = Educacion)) +
   geom_bar() +
-  labs(x = "Calidad Vivienda", y = "Frecuencia") +
+  labs(x = "Nivel educativo", y = "Frecuencia") +
   theme_minimal()+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 En el gráfico correspondiente a la educación podemos evidenciar como la mayor frecuencia se encuentra en el 9, lo cual corresponde a una educación media completa en un establecimiento científico Humanista.
 
-```{r} # 3.1 Gráficos univariados.}
+```{r}
+# 3.1 Gráficos univariados.  
 #| label: fig-gdp 
 #| #| fig-cap: “Vivienda” 
 #| #Vivienda 
-frq(datos_proc$Vivienda)  
+frq(datos_proc$Vivienda) 
+
 ggplot(datos_proc, aes(x = Vivienda)) +   geom_bar() +   labs(x = "Calidad Vivienda", y = "Frecuencia") +   theme_minimal()+   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
