@@ -1,0 +1,33 @@
+"0","# 3.1 Gráficos univariados."
+"0",""
+"0","#| label: fig-gdp"
+"0","#| fig-cap: “Educacion”"
+"0","#Vivienda"
+"0","frq(datos_proc$Educacion)"
+"1","[31me6a_no_asiste. ¿Cuál es el nivel educacional más alto al cual asistió? (x)[39m[34m <numeric>[39m 
+[34m# total N=5386 valid N=5386 mean=10.28 sd=2.26[39m
+
+Value |                                                             Label |    N | Raw % | Valid % | Cum. %
+-----------------------------------------------------------------------------------------------------------
+    1 |                                                  1. Nunca asistió |   20 |  0.37 |    0.37 |   0.37
+    2 |                                                      2. Sala cuna |    0 |  0.00 |    0.00 |   0.37
+    3 |                    3. Jardín Infantil (Medio menor y Medio mayor) |    0 |  0.00 |    0.00 |   0.37
+    4 |       4. Prekínder / Kínder (Transición menor y Transición Mayor) |    0 |  0.00 |    0.00 |   0.37
+    5 |                               5. Educación Especial (Diferencial) |    8 |  0.15 |    0.15 |   0.52
+    6 |                      6. Primaria o Preparatoria (Sistema antiguo) |   33 |  0.61 |    0.61 |   1.13
+    7 |                                               7. Educación Básica |  809 | 15.02 |   15.02 |  16.15
+    8 |                                  8. Humanidades (Sistema Antiguo) |   16 |  0.30 |    0.30 |  16.45
+    9 |                           9. Educación Media Científico-Humanista | 1844 | 34.24 |   34.24 |  50.69
+   10 | 10. Técnica, Comercial, Industrial o Normalista (Sistema Antiguo) |   15 |  0.28 |    0.28 |  50.97
+   11 |                           11. Educación Media Técnica Profesional |  541 | 10.04 |   10.04 |  61.01
+   12 |                  12. Técnico Nivel Superior (Carreras 1 a 3 años) |  798 | 14.82 |   14.82 |  75.83
+   13 |                           13. Profesional (Carreras 4 o más años) | 1182 | 21.95 |   21.95 |  97.77
+   14 |                                           14. Magíster o maestría |  102 |  1.89 |    1.89 |  99.67
+   15 |                                                     15. Doctorado |   18 |  0.33 |    0.33 | 100.00
+ <NA> |                                                              <NA> |    0 |  0.00 |    <NA> |   <NA>
+"
+"0","ggplot(datos_proc, aes(x = Educacion)) +"
+"0","  geom_bar() +"
+"0","  labs(x = ""Nivel educativo"", y = ""Frecuencia"") +"
+"0","  theme_minimal()+"
+"0","  theme(axis.text.x = element_text(angle = 45, hjust = 1))"
