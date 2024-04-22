@@ -1,0 +1,8 @@
+"0",""
+"0","# 3.1 Gráficos univariados."
+"0",""
+"0","ggplot(datos_proc, aes(x = Educacion)) +"
+"0","  geom_bar() +"
+"0","  labs(x = ""Nivel educativo"", y = ""Frecuencia"") +"
+"0","  theme_minimal()+"
+"0","  theme(axis.text.x = element_text(angle = 45, hjust = 1))"

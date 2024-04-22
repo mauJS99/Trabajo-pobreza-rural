@@ -1,0 +1,6 @@
+"0","sum(is.na(datos_proc))"
+"1","[1]"
+"1"," 19402"
+"1","
+"
+"0","datos_proc <-na.omit(datos_proc)"
